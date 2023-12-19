@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile_Page">
+
+    <TextView
+        android:id="@+id/usernameTV"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="204dp"
+        android:text="replace usernmae "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameTV"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="40dp"
+        android:text="replace name "
+        app:layout_constraintEnd_toEndOf="@+id/usernameTV"
+        app:layout_constraintStart_toStartOf="@+id/usernameTV"
+        app:layout_constraintTop_toBottomOf="@+id/usernameTV" />
+
+    <TextView
+        android:id="@+id/emailTV"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="28dp"
+        android:text="replace email "
+        app:layout_constraintEnd_toEndOf="@+id/nameTV"
+        app:layout_constraintStart_toStartOf="@+id/nameTV"
+        app:layout_constraintTop_toBottomOf="@+id/nameTV" />
+
+    <TextView
+        android:id="@+id/ageTV"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="28dp"
+        android:text="replace Age "
+        app:layout_constraintEnd_toEndOf="@+id/emailTV"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/emailTV"
+        app:layout_constraintTop_toBottomOf="@+id/emailTV" />
+
+    <TextView
+        android:id="@+id/addressTV"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="28dp"
+        android:text="replace Address "
+        app:layout_constraintEnd_toEndOf="@+id/ageTV"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ageTV"
+        app:layout_constraintTop_toBottomOf="@+id/ageTV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
