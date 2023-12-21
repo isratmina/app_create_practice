@@ -14,16 +14,14 @@ class Profile_Page : AppCompatActivity() {
     private lateinit var ageTV: TextView
     private lateinit var addressTV: TextView
 
-    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_profile_page)
         usernameTV = findViewById(R.id.usernameTV)
         nameTV = findViewById(R.id.nameTV)
         emailTV = findViewById(R.id.emailTV)
         ageTV = findViewById(R.id.ageTV)
         addressTV = findViewById(R.id.addressTV)
-
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_profile_page)
 
         var usernameText = intent.getStringExtra("username")
         usernameTV.text = usernameText.toString()

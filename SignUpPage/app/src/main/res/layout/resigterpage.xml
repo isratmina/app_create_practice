@@ -37,7 +37,7 @@
       app:layout_constraintTop_toBottomOf="@+id/titleText" />
 
   <com.google.android.material.textfield.TextInputLayout
-      android:id="@+id/username"
+      android:id="@+id/et1"
       android:layout_width="match_parent"
       android:layout_height="65dp"
       android:layout_marginStart="20dp"
@@ -50,13 +50,14 @@
       app:layout_constraintTop_toBottomOf="@+id/profile_image">
 
     <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/username"
         style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
   </com.google.android.material.textfield.TextInputLayout>
 
   <com.google.android.material.textfield.TextInputLayout
-      android:id="@+id/name"
+      android:id="@+id/et2"
       android:layout_width="match_parent"
       android:layout_height="65dp"
       android:layout_marginTop="20dp"
@@ -64,15 +65,16 @@
       android:layout_marginEnd="20dp"
       android:hint="Name"
       app:endIconMode="clear_text"
-      app:layout_constraintEnd_toEndOf="@+id/username"
-      app:layout_constraintStart_toStartOf="@+id/username"
-      app:layout_constraintTop_toBottomOf="@+id/username">
+      app:layout_constraintEnd_toEndOf="@+id/et1"
+      app:layout_constraintStart_toStartOf="@+id/et1"
+      app:layout_constraintTop_toBottomOf="@+id/et1">
     <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/name"
         style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
   </com.google.android.material.textfield.TextInputLayout><com.google.android.material.textfield.TextInputLayout
-    android:id="@+id/email"
+    android:id="@+id/et3"
     android:layout_width="match_parent"
     android:layout_height="65dp"
     android:layout_marginStart="20dp"
@@ -80,18 +82,19 @@
     android:layout_marginTop="20dp"
     android:hint="Email"
     app:endIconMode="clear_text"
-    app:layout_constraintEnd_toEndOf="@+id/name"
-    app:layout_constraintStart_toStartOf="@+id/name"
-    app:layout_constraintTop_toBottomOf="@+id/name" >
+    app:layout_constraintEnd_toEndOf="@+id/et2"
+    app:layout_constraintStart_toStartOf="@+id/et2"
+    app:layout_constraintTop_toBottomOf="@+id/et2" >
 
   <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/email"
       style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
       android:layout_width="match_parent"
       android:layout_height="match_parent" />
 </com.google.android.material.textfield.TextInputLayout>
 
   <com.google.android.material.textfield.TextInputLayout
-      android:id="@+id/age"
+android:id="@+id/et4"
       android:layout_width="match_parent"
       android:layout_height="65dp"
       android:layout_marginStart="20dp"
@@ -99,17 +102,18 @@
       android:layout_marginEnd="20dp"
       android:hint="Age"
       app:endIconMode="clear_text"
-      app:layout_constraintEnd_toEndOf="@+id/email"
-      app:layout_constraintStart_toStartOf="@+id/email"
-      app:layout_constraintTop_toBottomOf="@+id/email" >
+      app:layout_constraintEnd_toEndOf="@+id/et3"
+      app:layout_constraintStart_toStartOf="@+id/et3"
+      app:layout_constraintTop_toBottomOf="@+id/et3" >
     <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/age"
         style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
   </com.google.android.material.textfield.TextInputLayout>
 
   <com.google.android.material.textfield.TextInputLayout
-      android:id="@+id/address"
+android:id="@+id/et5"
       android:layout_width="match_parent"
       android:layout_height="65dp"
       android:layout_marginStart="20dp"
@@ -117,10 +121,11 @@
       android:layout_marginTop="20dp"
       android:hint="Address"
       app:endIconMode="clear_text"
-      app:layout_constraintEnd_toEndOf="@+id/age"
-      app:layout_constraintStart_toStartOf="@+id/age"
-      app:layout_constraintTop_toBottomOf="@+id/age">
+      app:layout_constraintEnd_toEndOf="@+id/et4"
+      app:layout_constraintStart_toStartOf="@+id/et4"
+      app:layout_constraintTop_toBottomOf="@+id/et4">
     <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/address"
         style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
         android:layout_width="377dp"
         android:layout_height="match_parent" />
@@ -140,7 +145,7 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.498"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/address"
+      app:layout_constraintTop_toBottomOf="@+id/et5"
       app:strokeColor="#FFFFFF"
       app:strokeWidth="1dp" />
 
