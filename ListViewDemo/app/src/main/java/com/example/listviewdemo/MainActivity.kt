@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         listView = findViewById(R.id.listView)
 
+
         val countryList:ArrayList<Country> = ArrayList<Country>()
 
         countryList.add(Country(R.color.black, "United States ", "The United States of America (USA), commonly known as the United States (U.S.) or America, is a country primarily located in North America."))
