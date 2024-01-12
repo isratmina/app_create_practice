@@ -12,9 +12,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var calculate: Button
     private lateinit var result: TextView
     private lateinit var health: TextView
-
-
-
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
